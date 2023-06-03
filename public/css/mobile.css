@@ -1,0 +1,87 @@
+#navbar {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+}
+
+.logo {
+   font-size: 2rem;
+}
+
+.logo1 {
+    color: green;
+    font-size: 2rem;
+}
+
+#showcase {
+    justify-content: center;
+}
+
+#showcase-container h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#clients {
+    width: 90%;
+    min-height: 500px;
+    color: #eee;
+    display: flex;
+}
+
+#clients-container {
+    width: 0%;
+}
+
+.text{
+    text-align:center;
+    font-size: 1em;
+    margin: auto;
+    line-height: 1.2em;
+
+}
+
+#product {
+    width: 100%;
+    margin: auto;
+    min-height: 900px;
+    font-size: 1em;
+}
+
+#product > .headline {
+    text-align: center;
+}
+
+#items .item {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 300px;
+}
+
+
+#item-image {
+    width: 0%;
+}
+
+#article {
+    width: 100%;
+    min-height: 900px;
+    color: #eee;
+    display: flex;
+    margin: auto;
+}
+
+.text > .headline-article{
+    font-size: 2em;
+    margin-bottom: 40px;
+    line-height: 1em;
+}
+
+.text > .text-article {
+    font-size: 1em;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/mobile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Memor.ia</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="navbar-container">
+            <h1 class="logo">Memor<h1 class="logo1">.ia</h1></h1>
+        </div>
+    </nav>
+
+    <header id="showcase">
+        <div id="showcase-container">
+            <h1>Gerenciamento de Memória</h1>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="clients">
+        <div id="clients-container">
+            <img src="./img/umberto-jXd2FSvcRr8-unsplash.jpg" class="client" alt="">
+        </div>
+        <div class="text">
+            <h1 class="headline">O que é?</h1>
+            <p>O gerenciamento de memória é uma parte essencial dos sistemas operacionais. Ele envolve a alocação, controle e liberação do espaço de memória disponível em um computador para que os programas possam ser executados de maneira eficiente. 
+            </p>
+            <p>Existem várias técnicas, como alocação contígua, paginação, segmentação e memória virtual, que são usadas para gerenciar a memória de forma eficiente. 
+            </p>
+            <p>O gerenciamento de memória também envolve o controle de acesso à memória, a prevenção de conflitos e vazamentos, e a otimização do desempenho geral do sistema. É fundamental para garantir a estabilidade, o desempenho e a segurança de um sistema computacional.
+            </p>
+        </div>
+    </section>
+
+    <section id="product">
+        <div class="mb-5 " id="accordion">
+            <h1 class="headline-article">Perguntas Frequentes</h1>
+            <div class="card bg-secondary" style="max-width: 70rem;">
+                <div class="card-header" id="pegunta1">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link bg-dark" data-toggle="collapse" data-target="#resposta1">
+                            O que é gerenciamento de memória?
+                        </button>
+                    </h5>
+                </div>
+                <div class="collapse" id="resposta1" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="text-article">O gerenciamento de memória é o processo pelo qual um sistema operacional controla e coordena o uso da memória em um computador. A memória é um recurso limitado e valioso que é usado para armazenar dados e instruções necessários para a execução de programas.</p>
+
+                        <p class="text-article">O objetivo do gerenciamento de memória é otimizar o uso desse recurso, alocando espaço de memória para os processos em execução, garantindo que eles tenham acesso aos dados e instruções necessários, e liberando a memória quando não estiver mais em uso.</p>
+                        
+                        <p class="text-article">Existem várias técnicas e estratégias utilizadas no gerenciamento de memória, como alocação contígua, paginação, segmentação e memória virtual. Cada técnica tem suas próprias vantagens e desvantagens, dependendo das características do sistema e dos requisitos dos programas.</p>
+                        
+                        <p class="text-article">Além disso, o gerenciamento de memória também envolve o controle de acesso à memória, prevenção de conflitos entre processos, detecção e correção de erros de memória, e otimização do desempenho do sistema. Em resumo, o gerenciamento de memória é responsável por controlar o uso eficiente e seguro da memória em um computador, garantindo que os programas tenham acesso aos recursos necessários para sua execução e maximizando o desempenho do sistema como um todo.</p>
+                    
+                    </div>
+                </div>
+                <div class="card-header" id="pegunta2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link bg-dark" data-toggle="collapse" data-target="#resposta2">
+                            Quais são os diferentes métodos de gerenciamento de memória?
+                        </button>
+                    </h5>
+                </div>
+                <div class="collapse" id="resposta2" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="text-article">Existem diferentes métodos de gerenciamento de memória, cada um com suas características e abordagens. Aqui está um resumo dos principais métodos:
+             
+                        </p>
+                        <p class="text-article"><span class="enum-color">1. Alocação Contígua</span>: Nesse método, a memória é dividida em partições contíguas. Cada processo é alocado em uma partição de tamanho adequado. Pode ser implementado com particionamento fixo, onde a memória é dividida em blocos de tamanho igual, ou particionamento variável, onde as partições têm tamanhos diferentes. O sistema operacional é responsável por gerenciar a alocação e liberação das partições de memória.
+             
+                        </p>
+                        <p class="text-article"><span class="enum-color">2. Paginação</span>: Na paginação, a memória é dividida em páginas de tamanho fixo. Os processos também são divididos em páginas correspondentes. Isso permite uma alocação flexível e eficiente da memória, pois os processos não precisam ser alocados de forma contígua. O sistema operacional realiza o mapeamento das páginas virtuais para as páginas físicas da memória.
+                        </p>
+                        <p class="text-article">
+                            <span class="enum-color">3. Segmentação</span>: Nesse método, a memória é dividida em segmentos lógicos que correspondem a unidades lógicas do programa, como código, dados, pilha, etc. Cada segmento pode ter um tamanho variável. O sistema operacional é responsável por mapear os segmentos lógicos para os locais reais da memória física.
+                        </p>
+                        <p class="text-article">
+                            <span class="enum-color">4. Memória Virtual</span>: A memória virtual é uma técnica que permite que programas sejam executados como se tivessem acesso a uma quantidade maior de memória do que a fisicamente disponível. Ela usa um espaço em disco chamado arquivo de troca (swap) para armazenar temporariamente partes inativas dos programas. Isso permite uma melhor utilização da memória física e o compartilhamento eficiente entre diferentes processos.
+                        </p>
+                        <p class="text-article">
+                            Cada método tem suas vantagens e desvantagens em relação à eficiência de uso da memória, fragmentação, proteção de memória e capacidade de lidar com requisitos de tamanho variável dos processos. A escolha do método de gerenciamento de memória depende das necessidades e características do sistema operacional e dos programas em execução.   
+                        </p>
+                    </div>
+                </div>
+                <div class="card-header" id="pegunta3">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link bg-dark" data-toggle="collapse" data-target="#resposta3">
+                            O que é fragmentação de memória e quais são os tipos de fragmentação?
+                        </button>
+                    </h5>
+                </div>
+                <div class="collapse" id="resposta3" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="text-article">A fragmentação de memória ocorre quando o espaço de memória livre é dividido em blocos menores e não contíguos, tornando-se incapaz de acomodar a alocação de memória de um processo, mesmo que haja memória livre total suficiente.
+ 
+                        </p>
+                        <p class="text-article">Existem dois tipos principais de fragmentação de memória:<br><br>
+                            <span class="enum-color">1. Fragmentação Interna</span>: A fragmentação interna ocorre quando há espaço não utilizado dentro de uma partição alocada a um processo. Isso acontece quando o tamanho da partição é maior do que o necessário para acomodar o programa. Como resultado, parte da memória é desperdiçada, reduzindo a eficiência geral do sistema.
+                        </p>
+                        <p class="text-article"><span class="enum-color">2. Fragmentação Externa</span>: A fragmentação externa ocorre quando há espaço livre na memória, mas está dividido em pequenos blocos dispersos ao redor. Embora a quantidade total de memória livre possa ser suficiente para alocar um novo processo, a fragmentação impede que espaços contíguos sejam encontrados para acomodar a alocação. Isso resulta em ineficiência, já que a memória não pode ser utilizada de forma eficiente.
+                        </p>
+                        <p class="text-article">
+                            A fragmentação de memória pode levar a problemas como falta de espaço para alocar novos processos, redução do desempenho do sistema devido ao aumento da sobrecarga de gerenciamento de memória e desperdício de recursos.
+                            Para lidar com a fragmentação, técnicas como compactação (reorganização da memória para consolidar espaços livres) e swapping (movimento de processos entre a memória principal e o disco) podem ser utilizadas. Além disso, estratégias de alocação dinâmica, como paginação e segmentação, ajudam a mitigar os efeitos da fragmentação.
+                    </div>
+                </div>
+                <div class="card-header" id="pegunta4">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link bg-dark" data-toggle="collapse" data-target="#resposta4">
+                            Como ocorre a liberação de memória em um sistema operacional?
+                        </button>
+                    </h5>
+                </div>
+                <div class="collapse" id="resposta4" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="text-article">A liberação de memória em um sistema operacional é realizada para desalocar blocos de memória que não são mais necessários por um processo, permitindo que esses blocos sejam reutilizados por outros processos ou pelo próprio sistema operacional. Aqui está um resumo de como ocorre a liberação de memória:
+ 
+                        </p>
+                        <p class="text-article"><span class="enum-color">1. Alocação Estática</span>: Em sistemas que utilizam alocação estática, a liberação de memória não é uma preocupação, pois a memória alocada para variáveis e estruturas de dados é liberada automaticamente quando o programa termina sua execução. O sistema operacional libera todos os recursos alocados para o programa.
+             
+                        </p>
+                        <p class="text-article"><span class="enum-color">2. Alocação Dinâmica</span>: Em sistemas que utilizam alocação dinâmica de memória, é responsabilidade do programador liberar a memória alocada manualmente quando ela não for mais necessária. Isso é feito usando funções ou operadores especiais fornecidos pelo sistema operacional ou pela linguagem de programação.<br><br>
+                        Na alocação dinâmica, o programador usa a função "free()" ou operações semelhantes para liberar explicitamente o bloco de memória alocado anteriormente. Essa função informa ao sistema operacional que o programa não precisa mais daquele bloco de memória, tornando-o disponível para reutilização.<br><br>
+                        É importante garantir que todos os blocos de memória alocados dinamicamente sejam liberados corretamente, evitando vazamentos de memória, onde a memória alocada não é liberada mesmo quando não é mais necessária.
+                        </p>
+                        <p class="text-article"><span class="enum-color">3. Gerenciamento de Memória pelo Sistema Operacional</span>: Além da liberação de memória feita pelos próprios programas, o sistema operacional também realiza a liberação de memória em certos casos, como quando um processo é encerrado. Nesse caso, o sistema operacional libera automaticamente toda a memória alocada para o processo encerrado, garantindo que os recursos sejam liberados e disponibilizados para outros processos.
+            
+                        </p>
+                        <p class="text-article">
+                            Além disso, o gerenciamento de memória também envolve o controle de acesso à memória, prevenção de conflitos entre processos, detecção e correção de erros de memória, e otimização do desempenho do sistema.
+                            Em resumo, o gerenciamento de memória é responsável por controlar o uso eficiente e seguro da memória em um computador, garantindo que os programas tenham acesso aos recursos necessários para sua execução e maximizando o desempenho do sistema como um todo.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-header" id="pegunta5">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link bg-dark" data-toggle="collapse" data-target="#resposta5">
+                            Como ocorre a liberação de memória em um sistema operacional?
+                        </button>
+                    </h5>
+                </div>
+                <div class="collapse" id="resposta5" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="text-article">Um vazamento de memória ocorre quando um programa aloca memória dinamicamente e não a libera quando não é mais necessária, resultando em uma perda gradual e contínua de memória ao longo do tempo. Isso pode levar a um consumo excessivo de memória e a um desempenho inadequado do sistema. 
+                        </p>
+                        <p class="text-article">Aqui está um resumo de como evitar vazamentos de memória: <br><br>
+                            <span class="enum-color">1. Gerencie cuidadosamente a alocação e liberação de memória</span>: Certifique-se de que todas as alocações de memória dinâmica sejam correspondidas com a devida liberação de memória quando não for mais necessária. Sempre chame a função "free()" ou operações semelhantes para liberar a memória alocada dinamicamente.
+             
+                        </p>
+                        <p class="text-article"><span class="enum-color">2. Conheça o escopo e a vida útil dos objetos</span>: Entenda quando um objeto ou bloco de memória não é mais necessário e pode ser liberado. A liberação deve ocorrer quando o objeto não estiver mais em uso ou quando sair do escopo atual. Certifique-se de que todas as referências ao objeto sejam eliminadas antes de liberar a memória.
+                        </p>
+                        <p class="text-article">
+                            <span class="enum-color">3. Utilize ferramentas de análise de memória</span>: Use ferramentas e bibliotecas de análise de memória, como Valgrind (para C/C++) ou recursos de gerenciamento de memória fornecidos por linguagens de programação de alto nível. Essas ferramentas podem ajudar a identificar vazamentos de memória, detectando alocações não liberadas e fornecendo informações úteis para corrigi-los.
+                        </p>
+                        <p class="text-article">
+                            <span class="enum-color">4. Teste e depure seu código</span>: Realize testes adequados para identificar e corrigir vazamentos de memória. Isso envolve a execução do programa em várias situações e verificando se a quantidade de memória utilizada permanece estável. Use depuradores para examinar o comportamento do programa e verificar se todas as alocações de memória são adequadamente liberadas.
+                        </p>
+                        <p class="text-article">
+                            <span class="enum-color">5. Siga as boas práticas de programação</span>: Desenvolva um código limpo e organizado, adotando boas práticas de programação. Isso inclui evitar alocações desnecessárias de memória, minimizar o escopo das variáveis e estruturas de dados e realizar uma gestão eficiente dos recursos de memória.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support">
+        <div class="support-container">
+            <h1 class="headline">Ficou com alguma duvida?</h1>
+            <p>Entre em contato com nosso suporte.</p>
+            <a href="/chat/index.html" class="btn btn-primary" role="button" aria-disabled="true">Suporte</a>
+        </div>
+    </section>
+
+    </section>
+
+    <footer id="footer">
+        <p>Copyright 2023 - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/95716f5e1d.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Our JS file -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script> $('[data-toggle="tooltip"]').tooltip() </script>
+</body>
+
+</html>

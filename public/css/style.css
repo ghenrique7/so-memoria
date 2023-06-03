@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #141414;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+a:hover{
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background: #111;
+    color: #eee;
+    border-radius: 5px;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #000;
+}
+
+.headline {
+    padding-bottom: 10px;
+    font-size: 2em;
+    color: #eee;
+}
+
+/* Navbar */
+#navbar {
+    width: 100%;
+    background: #111;
+    color: #eee;
+    height: 80px;
+}
+
+#navbar-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+.logo1 {
+    color: green;
+    font-size: 3rem;
+}
+
+#navbar-items {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#navbar-items li {
+    padding: 10px;
+}
+
+/* Showcase */
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #eee;
+    background: url('../img/showcase.png') no-repeat center center/cover;
+
+    /* Overlay */
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
+}
+
+#showcase-container {
+    text-align: center;
+}
+
+#showcase-container h1 {
+    font-size: 4rem;
+}
+
+#showcase-container p {
+    font-size: 1.2rem;
+    padding: 7px 0;
+}
+
+/* Clients */
+#clients {
+    width: 80%;
+    min-height: 900px;
+    color: #eee;
+    display: flex;
+}
+
+#clients-container {
+    display: grid;
+    padding: 15px;
+}
+
+.client {
+    display: inline-block;
+    width: 80%;
+    margin: auto;
+}
+
+.text{
+    text-align:center;
+    font-size: 1.2em;
+    margin: auto;
+    line-height: 1.2em;
+}
+
+.text > h1 {
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+.text > p {
+    padding: 5px;
+}
+
+
+/* Product */
+#product {
+    width: 100%;
+    padding: 20px;
+    min-height: 900px;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#product-container {
+    color: #eee;
+}
+
+#items {
+    width: 100%;
+}
+
+#items .item {
+    display: flex;
+    padding: 5px;
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: green;
+}
+
+#item-image {
+    width: 40%;
+    padding-left: 200px;
+    display: flex;
+    margin: auto;
+}
+
+/* Testimonials */
+
+.duas {
+    display: flex;
+    align-items: space-between;
+}
+
+#article {
+    padding-top: 300px;
+    width: 70%;
+    min-height: 900px;
+    color: #eee;
+    display: flex;
+    margin: auto;
+
+}
+
+.enum-color {
+    color: #03fe03;   
+}
+
+.headline-article{
+    font-size: 3em;
+    margin-bottom: 60px;
+    line-height: 1em;
+    color: white;
+    text-align: center;
+}
+
+.text-article {
+    font-size: 1.2em;
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+    color: #fff;
+}
+
+i {
+    margin-right: 10px;
+}
+
+#support {
+    padding-top: 300px;
+    width: 100%;
+    min-height: 900px;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.support-container > h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.support-container > a {
+    background: green;
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.support-container > p {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/* Footer */
+#footer {
+    background: #222;
+    color: #eee;
+    padding: 30px;
+    text-align: center;
+}
+
+.card-header > h5 > button {
+    text-decoration: none;
+}
+
+.card-header > h5 > button:hover {
+    color: green;
+    text-decoration: none;
+}
