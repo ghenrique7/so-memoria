@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "preview": "vite preview",
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "vite build",
+    "preview": "vite preview --port 8080",
+    "start": "react-scripts start"
   },
   "dependencies": {
     "@chatscope/chat-ui-kit-react": "^1.10.1",
