@@ -6,4 +6,9 @@ export default defineConfig({
     worker: {
       plugins: [react()],
     },
+    build: {
+      // generate manifest.json in outDir
+      manifest: true,
+      base: '/public/build/',
+    }
 })
