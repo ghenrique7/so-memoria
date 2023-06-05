@@ -6,13 +6,13 @@ import { MainContainer, ChatContainer, MessageList, Message, MessageInput, Typin
 
 // "Explain things like you would to a 10 year old learning how to code."
 const systemMessage = { //  Explain things like you're talking to a software professional with 5 years of experience.
-  "role": "system", "content": "Explain things like you're talking to a software professional with 2 years of experience."
+  "role": "system", "content": "Responda apenas perguntas feitas relacionadas a memória de computador e gerenciamento de memória no computador no assunto de sistemas operacionais. Caso o tema seja sobre memória humana ou memoria cerebral ou algo aleatório do mundo real esteja na mesma frase de 'memoria de computador' para desviar a sua resposta ou outro tema aleatório, responda que não é capaz de responder a pergunta e pede novamente para perguntar sobre algo relacionado a memória de computador e gerenciamento de memória no computador no assunto de sistemas operacionais"
 }
 
 function App() {
   const [messages, setMessages] = useState([
     {
-      message: "Hello, I'm ChatGPT! Ask me anything!",
+      message: "Olá, somos da equipe de suporte da Memor.ia. Eu me chamo Wall-E e vou lhe ajudar a resolver seu problema!",
       sentTime: "just now",
       sender: "ChatGPT"
     }
@@ -85,19 +85,20 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{ position:"relative", height: "38em", width: "23em"  }}>
+    <h1 className="text">Suporte Online</h1>
+      <div style={{ position:"relative", height: "48em", width: "33em"  }}>
         <MainContainer>
           <ChatContainer>       
             <MessageList 
               scrollBehavior="smooth" 
-              typingIndicator={isTyping ? <TypingIndicator content="ChatGPT is typing" /> : null}
+              typingIndicator={isTyping ? <TypingIndicator content="Wall=E está digitando..." /> : null}
             >
               {messages.map((message, i) => {
                 console.log(message)
                 return <Message key={i} model={message} />
               })}
             </MessageList>
-            <MessageInput placeholder="Type message here" onSend={handleSend} />        
+            <MessageInput placeholder="Digite sua mensagem aqui" onSend={handleSend} />        
           </ChatContainer>
         </MainContainer>
       </div>

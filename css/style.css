@@ -257,7 +257,16 @@ i {
     text-decoration: none;
 }
 
+.card-header {
+    margin: auto;
+}
+
 .card-header > h5 > button:hover {
     color: green;
     text-decoration: none;
+}
+
+.card {
+    width: 65%;
+    margin: auto;
 }
